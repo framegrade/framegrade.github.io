@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://framegrade.github.io/sitemap.xml
