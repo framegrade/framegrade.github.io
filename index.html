@@ -1,7 +1,13 @@
 <!doctype html>
+<html lang="en" dir="ltr">
+<head>
 <meta charset="utf-8">
 <title>Mohamed Gopa · Content Creator & Photographer in Kuwait | محمد جوبا مصور وصانع محتوى في الكويت</title>
 <link rel="canonical" href="https://framegrade.github.io/">
+<link rel="alternate" hreflang="en" href="https://framegrade.github.io/">
+<link rel="alternate" hreflang="ar" href="https://framegrade.github.io/?lang=ar">
+<link rel="alternate" hreflang="x-default" href="https://framegrade.github.io/">
+<link rel="icon" href="favicon.ico" sizes="32x32">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Mohamed Gopa, content creator and professional photographer in Kuwait: product and food photography, reels, video and FPV drone for restaurants, cafes, brands and clubs. محمد جوبا، مصور فوتوغرافي محترف وصانع محتوى في الكويت: تصوير منتجات ومطاعم، ريلز، فيديو وتصوير درون FPV.">
@@ -24,7 +30,8 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&family=Lalezar&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&family=Lalezar&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=JetBrains+Mono:wght@500&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&family=Lalezar&display=swap"></noscript>
 <style>
 /* Night shoot: warm black stage, a camera's REC red and white as the only colours.
    Heavy condensed grotesque for the shout, a wide gradient grotesque for the accent, the reels themselves as fill.
@@ -184,7 +191,8 @@ html[lang=ar] .proof b{font-family:"Bricolage Grotesque",sans-serif}
 .js .hero h1 .ln:nth-child(3)>span{animation-delay:.24s}
 .js .scrib path{animation:draw 1s .9s var(--ease) both}
 .js .hero .lede,.js .hero .ctas,.js .hero .proof{animation:up .9s var(--ease) both}
-.js .hero .lede{animation-delay:.45s}.js .hero .ctas{animation-delay:.55s}.js .hero .proof{animation-delay:.65s}
+.js .hero .lede{animation-name:upT;animation-delay:.45s}
+@keyframes upT{from{transform:translateY(24px)}}.js .hero .ctas{animation-delay:.55s}.js .hero .proof{animation-delay:.65s}
 .js .phones>.phone{animation:pop 1.2s var(--ease) both}
 .js .phones>.phone.s1{animation-delay:.35s}.js .phones>.phone.s2{animation-delay:.5s}.js .phones>.phone.m{animation-delay:.2s}
 @keyframes rise{from{transform:translateY(105%)}}
@@ -365,7 +373,7 @@ html[lang=ar] .hk{font-weight:400;font-size:28px}
 /* multiplayer cursors */
 .mp{position:absolute;left:0;top:0;z-index:4;pointer-events:none;display:flex;align-items:flex-start;gap:2px;animation:mpm 7s cubic-bezier(.45,.05,.2,1) infinite;animation-delay:var(--d);direction:ltr}
 .mp svg{width:22px;height:22px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.25));transform-origin:3px 3px;animation:clk 7s ease infinite;animation-delay:var(--d)}
-.mp span{margin-top:16px;background:color-mix(in srgb,var(--c) 80%,#000);color:var(--ct,#fff);font:600 11px var(--sans);padding:3px 8px;border-radius:6px 6px 6px 2px;white-space:nowrap}
+.mp span{margin-top:16px;background:color-mix(in srgb,var(--c) 55%,#000);color:var(--ct,#fff);font:600 11px var(--sans);padding:3px 8px;border-radius:6px 6px 6px 2px;white-space:nowrap}
 @keyframes mpm{0%{left:var(--x0);top:var(--y0);opacity:0}6%{opacity:1}22%{left:var(--x1);top:var(--y1)}50%{left:calc(var(--x1) + 26px);top:calc(var(--y1) + 18px)}78%{left:calc(var(--x1) - 10px);top:calc(var(--y1) + 40px)}94%{opacity:1}100%{left:var(--x0);top:var(--y0);opacity:0}}
 @keyframes clk{0%,21%,27%,100%{transform:scale(1)}24%{transform:scale(.78)}}
 .sc .mp,.sc .sel{animation-play-state:paused}.sc .mp svg{animation-play-state:paused}
@@ -839,6 +847,8 @@ html[lang=ar] .ftx h3{font-weight:400;font-stretch:normal;line-height:1.25}
 @media (max-width:900px){.fcc-tiles{grid-template-columns:minmax(0,1fr)}.fcc-specs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.fcc-icon{animation:none}.fcc-hero,.fcc-icon{transform:none}}
 </style>
+</head>
+<body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
 <symbol id="djiMark" viewBox="0 0 24 24"><path d="M19.2 7.8a716.856 716.856 0 0 0-1.232 4.63c-.202.772-.401 1.544-.634 2.308-.226.743-.504 1.535-.91 2.21-.422.703-.969 1.253-1.726 1.604-.3.137-.615.24-.939.306-.46.09-.926.146-1.394.165-1.163.065-3.628.056-4.79.056l.713-2.64c.539 0 1.078.002 1.617-.013.52-.014 1.092-.042 1.605-.163.56-.133.984-.36 1.355-.817.337-.416.564-.935.75-1.424.34-.893.688-2.173.934-3.093.277-1.041.544-2.085.812-3.129zm4.8 0-2.072 7.68h-3.84l2.073-7.68ZM11.339 4.92h3.84c-.403 1.5-.805 2.999-1.212 4.496-.283 1.044-.565 2.088-.872 3.124-.135.452-.269.903-.445 1.342-.141.352-.3.666-.591.93a1.908 1.908 0 0 1-.734.405c-.356.112-.717.154-1.085.184-.53.043-1.06.054-1.591.063-1.991.02-3.983.02-5.974-.001a21.408 21.408 0 0 1-.954-.034 5.319 5.319 0 0 1-.632-.07 1.851 1.851 0 0 1-.412-.119c-.44-.192-.664-.575-.677-1.043 0-.263.032-.525.093-.78.076-.367.171-.728.265-1.09.179-.691.506-1.966.762-2.638.2-.526.464-1.05.966-1.382.28-.186.576-.285.901-.35.241-.05.483-.075.728-.093.41-.03.82-.04 1.23-.047.582-.01 1.165-.013 1.748-.015L8.148 7.8h1.454l-.518 1.92c-.864 0-1.728-.002-2.593.003-.252.001-.504 0-.756.016a.968.968 0 0 0-.264.042c-.113.04-.17.11-.22.213-.073.15-.115.31-.162.468a84.804 84.804 0 0 0-.503 1.857c-.035.14-.07.28-.1.42-.022.099-.04.197-.05.298-.01.11-.014.242.053.345.068.103.182.127.29.143.12.018.241.021.363.025.199.006.398.007.597.008.544.003 1.089.003 1.633 0 .25-.002.501-.004.752-.014.173-.007.343-.013.513-.054.13-.031.23-.08.318-.186.056-.071.1-.15.133-.235.088-.209.15-.425.213-.641.245-.83.466-1.665.692-2.499l.675-2.503.67-2.505h3.84z"/></symbol><linearGradient id="logoG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#f2f2f2"/><stop offset=".78" stop-color="#cfcfcf"/><stop offset="1" stop-color="#9a9a9a"/></linearGradient>
@@ -886,7 +896,7 @@ html[lang=ar] .ftx h3{font-weight:400;font-stretch:normal;line-height:1.25}
   <div class="gstage" aria-hidden="true">
     <span class="gp" style="left:6%;top:20%;--z:1.4"><span style="--t:6.5s;--fl:14px"><span class="gi md" style="--a:#ff7a5c;--b:#d1150a" aria-hidden="true"><svg><use href="#g-cam"/></svg></span></span></span>
     <span class="gp" style="left:56%;top:13%;--z:.8"><span style="--t:7.5s;--dl:-2s"><img class="gi-real" src="fcc/icon.webp" alt="" width="76" height="76"></span></span>
-    <span class="gp" style="left:30%;top:31%;--z:1"><span style="--t:8s;--dl:-1s;--fl:10px"><div class="gwid"><img src="covers/DXrfpZbMTbO.jpg" alt=""><div class="gt"><span>Shared goals<small>pilara.club</small></span><span class="gi glass" style="--a:#fff;--b:#fff;--s:34px" aria-hidden="true"><svg><use href="#g-wave"/></svg></span></div><div class="gbar"><i></i></div><div class="gc"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg><svg viewBox="0 0 24 24"><path d="M7 4h4v16H7zM13 4h4v16h-4z"/></svg><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></div></div></span></span>
+    <span class="gp" style="left:30%;top:31%;--z:1"><span style="--t:8s;--dl:-1s;--fl:10px"><div class="gwid"><img src="covers/DXrfpZbMTbO.jpg" alt="" loading="lazy" decoding="async" width="540" height="960"><div class="gt"><span>Shared goals<small>pilara.club</small></span><span class="gi glass" style="--a:#fff;--b:#fff;--s:34px" aria-hidden="true"><svg><use href="#g-wave"/></svg></span></div><div class="gbar"><i></i></div><div class="gc"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg><svg viewBox="0 0 24 24"><path d="M7 4h4v16H7zM13 4h4v16h-4z"/></svg><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></div></div></span></span>
     <span class="gp" style="left:76%;top:38%;--z:1.6"><span style="--t:5.5s;--dl:-3s"><span class="gi md" style="--a:#3d434c;--b:#121418" aria-hidden="true"><svg><use href="#g-drone"/></svg></span></span></span>
     <span class="gp hide-md" style="left:4%;top:52%;--z:1.2"><span style="--t:7s;--dl:-4s"><span class="gi md" style="--a:#ffd54a;--b:#f08a00" aria-hidden="true"><svg><use href="#g-edit"/></svg></span></span></span>
     <span class="gp" style="left:66%;top:66%;--z:1.3"><span style="--t:6s;--dl:-1.5s"><span class="gi" style="--a:#ffffff;--b:#d6d0c6;--g:#0a0a0a" aria-hidden="true"><svg><use href="#g-clap"/></svg></span></span></span>
@@ -1163,8 +1173,8 @@ html[lang=ar] .ftx h3{font-weight:400;font-stretch:normal;line-height:1.25}
     <div class="ggrid rv">
       <div class="gcol">
         <div class="cmp" id="cmp" dir="ltr">
-          <img class="fin" id="cmpFin" src="grade/graded_4553.jpg" alt="" width="1000" height="1500">
-          <img class="raw" id="cmpRaw" src="grade/raw_4553.jpg" alt="" width="1000" height="1500">
+          <img class="fin" id="cmpFin" src="grade/graded_4553.jpg" alt="" loading="lazy" decoding="async" width="1000" height="1500">
+          <img class="raw" id="cmpRaw" src="grade/raw_4553.jpg" alt="" loading="lazy" decoding="async" width="1000" height="1500">
           <span class="lb l mono" data-t="grRaw">RAW</span><span class="lb r mono" data-t="grFin">Final</span>
           <span class="cl"><span class="ck" aria-hidden="true">⟷</span></span>
           <input type="range" id="cmpIn" min="0" max="100" value="50" data-t-aria="grCmp" aria-label="Drag to compare RAW and final">
@@ -1239,14 +1249,13 @@ html[lang=ar] .ftx h3{font-weight:400;font-stretch:normal;line-height:1.25}
 </section>
 
 <section class="contact" id="contact">
-  <img class="cbg" src="covers/DTp4xjDiJ1I.jpg" alt="">
+  <img class="cbg" src="covers/DTp4xjDiJ1I.jpg" alt="" loading="lazy" decoding="async" width="540" height="960">
   <video id="cVid" muted loop playsinline preload="none" poster="covers/DTp4xjDiJ1I.jpg" data-src="previews/DTp4xjDiJ1I.mp4" aria-hidden="true"></video>
   <div class="wrap">
     <div class="eyebrow mono"><span class="dot"></span> <span data-t="contactEy">Now booking shoots in Kuwait</span></div>
     <h2 class="h2 rv" data-t-html="contactH">Let's shoot<br><em>your</em> next reel</h2>
     <p class="lede" data-t="contactNote">Send a DM on Instagram with your brand, the place and the date you have in mind.</p>
     <form class="bk" id="bk" name="booking" novalidate>
-      <input type="hidden" name="form-name" value="booking">
       <input type="hidden" name="type" id="bkType">
       <input type="hidden" name="lang" id="bkLang" value="en">
       <input type="hidden" name="hours" id="bkHours" value="2">
@@ -1338,11 +1347,6 @@ html[lang=ar] .ftx h3{font-weight:400;font-stretch:normal;line-height:1.25}
   <span class="mono" id="pvCap"></span>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="work/projects.js"></script>
-<script src="work/carousel3d.js"></script>
 <script>
 document.documentElement.classList.add('js');
 /* ---------- words in both languages ---------- */
@@ -1360,7 +1364,7 @@ en:{skip:'Skip to the work',prEy:'Prices',prH:'Clear <em>prices</em> before we s
  curA:'Mohamed Gopa',curB:'Editor',curC:'Client',curD:'Colorist',note1:'Client wants it live on the feed by Friday',note2:'Keep the logo out of the bottom 35%',note3:'Hook lands at 0:02. Locked.',specDone:'Ready to post.', specEy:'Instagram specs',specH:'Made for the <em>feed</em>',specNote:'What Instagram requires and recommends for a reel, built into every delivery.',specSafe:'Safe',specRatio:'ratio',specMax:'max',specHook:'Hook',specCap:'Captions for muted viewers',specFollow:'Follow',sp1h:'Safe zones',sp1p:'Titles and captions sit in the middle. Instagram buttons and the caption cover the top and bottom of the frame.',sp2h:'Export',sp2p:'1080×1920, 9:16, 30 fps, H.264 with AAC audio. A reel can run up to 3 minutes.',sp3h:'First 3 seconds',sp3p:'The opening decides whether people stay. On-screen captions for muted viewers, and licensed or trending audio.',sp4h:'Cover',sp4p:'The profile grid shows covers at 3:4, so the subject stays centred and survives the crop.',specFoot:'No watermarks from other apps · Instagram recommends original reels',
  grEy:'Edit & colour · Adobe Lightroom',grH:'From <em>RAW</em> to final',grLede:'Every frame leaves the camera flat and grey. The edit sets the light, the contrast and the colour that make it look like the place felt.',grRaw:'RAW',grFin:'Final',grCmp:'Drag to compare RAW and final',grPick:'Choose a photo',grNote:'Drag the line on the photo. The numbers on the panel move with it, from the flat file to the finished grade.',grHonest:'The RAW view here is simulated from the finished photo, and the panel values show the kind of edit, not the exact recipe.',grCredit:'Adobe Lightroom icon via Wikimedia Commons. Adobe and Lightroom are trademarks of Adobe.',
  photoEy:'Photography · Nikon Z 7 · 18 frames',pWall:'Photo wall',pHint:'Move the cursor or drag to turn the wall. Click a frame to open it.',photoH:'Still <em>frames</em>',
- contactEy:'Now booking shoots in Kuwait',contactH:"Let's shoot<br><em>your</em> next project",contactNote:'Reels, photography, FPV drone, story coverage, editing and colour. Tell me about the shoot and I\'ll reply on WhatsApp or email.',fName:'Your name',fContact:'WhatsApp or email',fBrand:'Brand',fPlace:'Location link',fPlacePh:'https://maps.app.goo.gl/…',fPlaceHint:'Paste the pin from Google Maps or Apple Maps.',fLink:'Paste a full link that starts with https://',fHours:'Shoot length',fBase:'<b>2</b> hours to start',fExtra:'extra · 25 KD each',fTotal:'Total',fHrs:'hours',fHr1:'hour',fLess:'Fewer extra hours',fMore:'More extra hours',fDate:'Preferred date',fTime:'Preferred start time',fType:'Type of shoot',tReels:'Reels',tPhoto:'Photography',tFpv:'FPV drone',tEdit:'Editing & colour',fSend:'Send booking request',fSending:'Sending…',fOkH:'Request sent',fOk:'Thanks. I\'ll check my schedule and confirm the date and time with you on WhatsApp or email. The payment link comes after that.',fReq:'Fill in the highlighted fields.',fPick:'Pick at least one type of shoot.',fErr:'Couldn\'t send right now. ',fPrev:'This preview can\'t send forms. ',fWaLink:'Send the same details on WhatsApp',ctaWa:'Book on WhatsApp',ctaOr:'Or reach me on',copy:'Copy',copied:'Copied',waMsg:'Hi Mohamed, I would like to book a shoot.\nType: reels / photography / FPV drone / story coverage / editing and colour\nBrand:\nLocation link:\nDate:\nStart time:\nHours: 2 + extra',ctaDm:'DM on Instagram',
+ contactEy:'Now booking shoots in Kuwait',contactH:"Let's shoot<br><em>your</em> next project",contactNote:'Reels, photography, FPV drone, story coverage, editing and colour. Tell me about the shoot and I\'ll reply on WhatsApp or email.',fName:'Your name',fContact:'WhatsApp or email',fBrand:'Brand',fPlace:'Location link',fPlacePh:'https://maps.app.goo.gl/…',fPlaceHint:'Paste the pin from Google Maps or Apple Maps.',fLink:'Paste a full link that starts with https://',fHours:'Shoot length',fBase:'<b>2</b> hours to start',fExtra:'extra · 25 KD each',fTotal:'Total',fHrs:'hours',fHr1:'hour',fLess:'Fewer extra hours',fMore:'More extra hours',fDate:'Preferred date',fTime:'Preferred start time',fType:'Type of shoot',tReels:'Reels',tPhoto:'Photography',tFpv:'FPV drone',tEdit:'Editing & colour',fSend:'Send booking request',fOkH:'Request sent',fOk:'Thanks. I\'ll check my schedule and confirm the date and time with you on WhatsApp or email. The payment link comes after that.',fReq:'Fill in the highlighted fields.',fPick:'Pick at least one type of shoot.',ctaWa:'Book on WhatsApp',ctaOr:'Or reach me on',copy:'Copy',copied:'Copied',waMsg:'Hi Mohamed, I would like to book a shoot.\nType: reels / photography / FPV drone / story coverage / editing and colour\nBrand:\nLocation link:\nDate:\nStart time:\nHours: 2 + extra',ctaDm:'DM on Instagram',
  footIph:'Proudly shot on iPhone',footKw:'Guinness Creator · Kuwait',
  viewerLabel:'Reel viewer',photoViewerLabel:'Photo viewer',close:'Close',prev:'Previous',next:'Next',watch:'Watch on Instagram ↗',play:'Play ▶',view:'View',
  tickA:['Reels that stop the scroll','FPV drone','Food','Sport','Brands','Shot on iPhone','Kuwait'],tickB:['31 brands','29 reels','3M+ views','Cut on the beat','9:16'],
@@ -1378,7 +1382,7 @@ ar:{skip:'انتقل إلى الأعمال',prEy:'الأسعار',prH:'أسعا�
  curA:'Mohamed Gopa',curB:'المونتير',curC:'العميل',curD:'الملوّن',note1:'العميل يبيه على الفيد قبل الجمعة',note2:'خلّوا الشعار برّا آخر 35% من الشاشة',note3:'الخطاف عند الثانية 2. معتمد.',specDone:'جاهز للنشر.', specEy:'مواصفات انستقرام',specH:'مصنوع <em>للفيد</em>',specNote:'ما يشترطه انستقرام وما ينصح به في كل ريل، ونلتزم به في كل تسليم.',specSafe:'آمن',specRatio:'النسبة',specMax:'حد أقصى',specHook:'الخطاف',specCap:'ترجمة لمن يشاهد بلا صوت',specFollow:'تابع',sp1h:'المناطق الآمنة',sp1p:'العناوين والترجمة في وسط الإطار، لأن أزرار انستقرام والوصف تغطي أعلى الشاشة وأسفلها.',sp2h:'التصدير',sp2p:'دقة 1080×1920 بنسبة 9:16 و30 إطاراً في الثانية، بترميز H.264 وصوت AAC. الريل يصل حتى 3 دقائق.',sp3h:'أول ٣ ثوانٍ',sp3p:'البداية تقرر هل يكمل المشاهد. ترجمة على الشاشة لمن يشاهد بلا صوت، وصوت مرخّص أو رائج.',sp4h:'الغلاف',sp4p:'الغلاف يظهر بنسبة 3:4 في شبكة الحساب، فيبقى العنصر الأساسي في الوسط حتى لا يُقص.',specFoot:'بدون علامات مائية من تطبيقات أخرى · انستقرام يرشّح المحتوى الأصلي',
  grEy:'الإيديت والتلوين · Adobe Lightroom',grH:'من <em>RAW</em> إلى النهائي',grLede:'كل صورة تخرج من الكاميرا باهتة ورمادية. الإيديت يضبط الضوء والتباين والألوان حتى تشبه إحساس المكان.',grRaw:'RAW',grFin:'النهائي',grCmp:'اسحب للمقارنة بين RAW والنهائي',grPick:'اختر صورة',grNote:'اسحب الخط على الصورة، وأرقام اللوحة تتحرك معه من الملف الخام إلى التلوين النهائي.',grHonest:'صورة RAW هنا محاكاة مأخوذة من الصورة النهائية، وقيم اللوحة توضح نوع التعديل وليست الوصفة الدقيقة.',grCredit:'أيقونة Adobe Lightroom من Wikimedia Commons. Adobe وLightroom علامتان تجاريتان لشركة Adobe.',
  photoEy:'تصوير فوتوغرافي · Nikon Z 7 · 18 صورة',pWall:'جدار الصور',pHint:'حرّك المؤشر أو اسحب لتدوير الجدار، واضغط على أي صورة لفتحها.',photoH:'لقطات <em>ثابتة</em>',
- contactEy:'الحجز متاح الآن في الكويت',contactH:'لنصوّر<br><em>مشروعك</em> القادم',contactNote:'ريلز، تصوير فوتوغرافي، درون FPV، تغطية ستوري، مونتاج وتلوين. أخبرني عن التصوير وسأرد عليك عبر واتساب أو الإيميل.',fName:'اسمك',fContact:'واتساب أو إيميل',fBrand:'اسم العلامة',fPlace:'رابط موقع التصوير',fPlacePh:'https://maps.app.goo.gl/…',fPlaceHint:'الصق رابط الموقع من خرائط Google أو Apple.',fLink:'الصق رابطًا كاملًا يبدأ بـ https://',fHours:'مدة التصوير',fBase:'<b>ساعتان</b> أساسيتان',fExtra:'ساعات إضافية · 25 د.ك للساعة',fTotal:'المجموع',fHrs:'ساعات',fHr1:'ساعة',fLess:'تقليل الساعات الإضافية',fMore:'زيادة الساعات الإضافية',fDate:'التاريخ المطلوب',fTime:'وقت البدء المطلوب',fType:'نوع التصوير',tReels:'ريلز',tPhoto:'تصوير فوتوغرافي',tFpv:'درون FPV',tEdit:'مونتاج وتلوين',fSend:'أرسل طلب الحجز',fSending:'جارٍ الإرسال…',fOkH:'وصل طلبك',fOk:'شكرًا لك. سأراجع جدولي وأؤكد معك التاريخ والوقت عبر واتساب أو الإيميل، ثم أرسل لك رابط الدفع.',fReq:'أكمل الخانات المحددة باللون الأحمر.',fPick:'اختر نوع تصوير واحدًا على الأقل.',fErr:'تعذّر الإرسال الآن. ',fPrev:'هذه المعاينة لا ترسل النماذج. ',fWaLink:'أرسل التفاصيل نفسها على واتساب',ctaWa:'احجز عبر واتساب',ctaOr:'أو تواصل عبر',copy:'نسخ',copied:'تم النسخ',waMsg:'مرحباً محمد، أريد حجز تصوير.\nنوع العمل: ريلز / تصوير فوتوغرافي / درون FPV / تغطية ستوري / مونتاج وتلوين\nاسم العلامة:\nرابط الموقع:\nالتاريخ:\nوقت البدء:\nالمدة: ساعتان + ساعات إضافية',ctaDm:'راسلني على إنستغرام',
+ contactEy:'الحجز متاح الآن في الكويت',contactH:'لنصوّر<br><em>مشروعك</em> القادم',contactNote:'ريلز، تصوير فوتوغرافي، درون FPV، تغطية ستوري، مونتاج وتلوين. أخبرني عن التصوير وسأرد عليك عبر واتساب أو الإيميل.',fName:'اسمك',fContact:'واتساب أو إيميل',fBrand:'اسم العلامة',fPlace:'رابط موقع التصوير',fPlacePh:'https://maps.app.goo.gl/…',fPlaceHint:'الصق رابط الموقع من خرائط Google أو Apple.',fLink:'الصق رابطًا كاملًا يبدأ بـ https://',fHours:'مدة التصوير',fBase:'<b>ساعتان</b> أساسيتان',fExtra:'ساعات إضافية · 25 د.ك للساعة',fTotal:'المجموع',fHrs:'ساعات',fHr1:'ساعة',fLess:'تقليل الساعات الإضافية',fMore:'زيادة الساعات الإضافية',fDate:'التاريخ المطلوب',fTime:'وقت البدء المطلوب',fType:'نوع التصوير',tReels:'ريلز',tPhoto:'تصوير فوتوغرافي',tFpv:'درون FPV',tEdit:'مونتاج وتلوين',fSend:'أرسل طلب الحجز',fOkH:'وصل طلبك',fOk:'شكرًا لك. سأراجع جدولي وأؤكد معك التاريخ والوقت عبر واتساب أو الإيميل، ثم أرسل لك رابط الدفع.',fReq:'أكمل الخانات المحددة باللون الأحمر.',fPick:'اختر نوع تصوير واحدًا على الأقل.',ctaWa:'احجز عبر واتساب',ctaOr:'أو تواصل عبر',copy:'نسخ',copied:'تم النسخ',waMsg:'مرحباً محمد، أريد حجز تصوير.\nنوع العمل: ريلز / تصوير فوتوغرافي / درون FPV / تغطية ستوري / مونتاج وتلوين\nاسم العلامة:\nرابط الموقع:\nالتاريخ:\nوقت البدء:\nالمدة: ساعتان + ساعات إضافية',ctaDm:'راسلني على إنستغرام',
  footIph:'صُوّر بالآيفون بكل فخر',footKw:'Guinness Creator · الكويت',
  viewerLabel:'عارض الريلز',photoViewerLabel:'عارض الصور',close:'إغلاق',prev:'السابق',next:'التالي',watch:'شاهده على إنستغرام ↗',play:'تشغيل ▶',view:'عرض',
  tickA:['ريلز توقف التمرير','درون FPV','طعام','رياضة','علامات','بالآيفون','الكويت'],tickB:['31 علامة','29 ريل','+3M مشاهدة','على الإيقاع','9:16'],
@@ -1474,7 +1478,7 @@ let filter='all',list=reels;
 function draw(){
   list=filter==='all'?reels:reels.filter(r=>r.f===filter);
   grid.innerHTML=list.map((r,i)=>`<button class="reel" data-i="${i}" data-cur="play" aria-label="${esc(r.t[lang])}, ${r.tag}">
-      <div class="frame"><img src="${r.img}" alt="" loading="lazy"><video muted loop playsinline preload="none" poster="${r.img}" data-src="${r.vid}"></video><span class="shade"></span><span class="idx">${String(i+1).padStart(2,'0')}</span><span class="cat">${L[lang][r.f]}</span><span class="play">▶</span>
+      <div class="frame"><img src="${r.img}" alt="" loading="lazy" decoding="async" width="540" height="960"><video muted loop playsinline preload="none" poster="${r.img}" data-src="${r.vid}"></video><span class="shade"></span><span class="idx">${String(i+1).padStart(2,'0')}</span><span class="cat">${L[lang][r.f]}</span><span class="play">▶</span>
       <span class="meta"><strong>${esc(r.t[lang])}</strong><span>${r.tag}</span></span></div></button>`).join('');
   observe(grid.querySelectorAll('.reel'));
 }
@@ -1705,13 +1709,13 @@ function gLang(){const g=GR[gi];document.getElementById('lrName').textContent=g[
   document.getElementById('cmpRaw').alt=(lang==='ar'?'RAW محاكاة: ':'Simulated RAW: ')+(g[lang]||g.en);
   [...gpick.children].forEach((b,j)=>b.setAttribute('aria-label',GR[j][lang]||GR[j].en))}
 window.gradeLang=gLang;
-gpick.innerHTML=GR.map(g=>`<button type="button" aria-pressed="false"><img src="grade/graded_${g.id}.jpg" alt="" loading="lazy"></button>`).join('');
+gpick.innerHTML=GR.map(g=>`<button type="button" aria-pressed="false"><img src="grade/graded_${g.id}.jpg" alt="" loading="lazy" decoding="async" width="1000" height="1500"></button>`).join('');
 [...gpick.children].forEach((b,j)=>b.onclick=()=>gset(j));
 cmpIn.addEventListener('input',gpaint);
 gset(0);
 
 /* ---------- booking form (sends via WhatsApp) ---------- */
-(()=>{const f=document.getElementById('bk');if(!f)return;const msg=document.getElementById('bkMsg'),send=document.getElementById('bkSend'),types=f.querySelector('.bk-types');
+(()=>{const f=document.getElementById('bk');if(!f)return;const msg=document.getElementById('bkMsg'),types=f.querySelector('.bk-types');
 document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{const c=[...document.querySelectorAll('#bk input[name=t]')].find(i=>i.value===a.dataset.pick);if(c){c.checked=true;c.dispatchEvent(new Event('change',{bubbles:true}))}}));
 const d=document.getElementById('bkDate');try{d.min=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10)}catch(_){}
 
@@ -1762,7 +1766,6 @@ const confirmLinks=()=>{const g=n=>(f.elements[n].value||'').trim(),tot=2+extra,
   document.getElementById('bkTOk').value=wa(ok);document.getElementById('bkTNo').value=wa(no);
   document.getElementById('bkWaC').value=!/@/.test(c)&&ph.length>=10?`https://wa.me/${ph}?text=${encodeURIComponent(body)}`:'(client gave an email: the calendar link above adds them as a guest)'};
 const waText=fd=>(lang==='ar'?'مرحباً محمد، أريد حجز تصوير.':'Hi Mohamed, I\'d like to book a shoot.')+`\n${t('fName')}: ${fd.get('name')}\n${t('fBrand')}: ${fd.get('brand')}\n${t('fPlace')}: ${fd.get('location')}\n${t('fDate')}: ${fd.get('date')}\n${t('fTime')}: ${fd.get('time')}${fd.get('hours')?`\n${t('fHours')}: ${fd.get('hours')}`:''}${fd.get('fpv_seconds')?`\n${t('qFpv')}: ${fd.get('fpv_seconds')}`:''}${fd.get('edit_clips')?`\n${t('qEdit')}: ${fd.get('edit_clips')}`:''}\n${t('fType')}: ${fd.get('type')}${fd.get('mic')?'\n'+t('fMic'):''}\n${t('invH')}: ${fd.get('estimate')}\n${t('fContact')}: ${fd.get('contact')}`;
-const waLink=fd=>{msg.textContent='';const a=document.createElement('a');a.href='https://wa.me/96561000634?text='+encodeURIComponent(waText(fd));a.target='_blank';a.rel='noopener';a.textContent=t('fWaLink');return a};
 f.addEventListener('submit',async e=>{e.preventDefault();msg.textContent='';
   let bad=null,badLink=false;f.querySelectorAll('input[required]').forEach(i=>{let ok=i.type==='checkbox'?i.checked:i.value.trim()!=='';if(ok&&i.type==='url'){ok=/^https?:\/\/\S+\.\S+/i.test(i.value.trim());if(!ok)badLink=true}i.setAttribute('aria-invalid',!ok);if(!ok&&!bad)bad=i});
   const picked=[...f.querySelectorAll('input[name=t]:checked')].map(c=>c.value);
@@ -1779,6 +1782,7 @@ f.addEventListener('submit',async e=>{e.preventDefault();msg.textContent='';
 const langBtn=document.getElementById('lang');
 document.getElementById('mailCopy').addEventListener('click',e=>{const b=e.currentTarget,done=()=>{b.textContent=t('copied');setTimeout(()=>b.textContent=t('copy'),1600)};const fb=()=>{const r=document.createRange();r.selectNodeContents(b.previousElementSibling.querySelector('span'));const sel=getSelection();sel.removeAllRanges();sel.addRange(r)};try{navigator.clipboard.writeText('gopa.mohamed60@gmail.com').then(done,fb)}catch(_){fb()}});
 function applyLang(){
+  try{document.querySelector('link[rel="canonical"]').href='https://framegrade.github.io/'+(lang==='ar'?'?lang=ar':'')}catch(_){}
   const h=document.documentElement;h.lang=lang;h.dir=lang==='ar'?'rtl':'ltr';document.title=t('title');
   document.querySelectorAll('[data-t]').forEach(el=>el.textContent=t(el.dataset.t));
   document.querySelectorAll('[data-t-html]').forEach(el=>el.innerHTML=t(el.dataset.tHtml));
@@ -1795,6 +1799,7 @@ applyLang();
 
 /* ---------- smooth scroll (Lenis) + 3D showreel ---------- */
 let lenis=null;
+function bootLibs(){
 if(!still&&window.Lenis&&window.gsap){
   lenis=new Lenis({lerp:.1,smoothWheel:true});
   gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
@@ -1811,6 +1816,18 @@ if(srEl&&window.Carousel3D&&window.THREE&&window.gsap){
     onClose:()=>{lenis?lenis.start():document.body.style.overflow=''}});
   addEventListener('pagehide',e=>{if(!e.persisted){reel3d.destroy();lenis&&lenis.destroy()}});
 }
+}
+/* heavy libraries load after first paint so the hero text is not blocked */
+(function(){
+  const loadJS=src=>new Promise((ok,no)=>{const s=document.createElement('script');s.src=src;s.async=false;s.onload=ok;s.onerror=no;document.head.appendChild(s)});
+  const go=()=>Promise.all([
+    loadJS('https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js'),
+    loadJS('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js'),
+    loadJS('https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js'),
+    loadJS('work/projects.js')
+  ]).then(()=>loadJS('work/carousel3d.js')).then(bootLibs).catch(()=>{});
+  if(document.readyState==='complete')go();else addEventListener('load',go,{once:true});
+})();
 
 /* spec counters */
 (function(){const card=document.querySelector('.sc[data-spcount]');if(!card)return;const ns=[...card.querySelectorAll('.cn')];
@@ -1878,3 +1895,5 @@ const go=d=>{const cur=Math.round(-rot/STEP);target=-(cur+d)*STEP};
 document.getElementById('pNext').onclick=()=>go(lang==='ar'?-1:1);document.getElementById('pPrev').onclick=()=>go(lang==='ar'?1:-1);
 addEventListener('resize',measure);pwallReset();frame()})();
 </script>
+</body>
+</html>
