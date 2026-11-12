@@ -175,7 +175,7 @@
       <div class="rc-project" role="dialog" aria-modal="true" hidden>
         <button class="rc-close" type="button"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M2 2l14 14M16 2L2 16" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></button>
         <p class="rc-pmeta"></p><h3 class="rc-ptitle"></h3><p class="rc-pclient"></p>
-        <div class="rc-pact"><button class="rc-btn rc-sound" type="button"></button><a class="rc-btn solid rc-link" target="_blank" rel="noopener"></a></div>
+        <div class="rc-pact"><button class="rc-btn rc-sound" type="button"></button><a class="rc-btn solid rc-link" href="#work" target="_blank" rel="noopener" hidden></a></div>
       </div>
       <div class="rc-vids" aria-hidden="true"></div>`;
     const $ = (s) => root.querySelector(s);
