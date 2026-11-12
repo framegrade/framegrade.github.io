@@ -1245,9 +1245,8 @@ html[lang=ar] .ftx h3{font-weight:400;font-stretch:normal;line-height:1.25}
     <div class="eyebrow mono"><span class="dot"></span> <span data-t="contactEy">Now booking shoots in Kuwait</span></div>
     <h2 class="h2 rv" data-t-html="contactH">Let's shoot<br><em>your</em> next reel</h2>
     <p class="lede" data-t="contactNote">Send a DM on Instagram with your brand, the place and the date you have in mind.</p>
-    <form class="bk" id="bk" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+    <form class="bk" id="bk" name="booking" novalidate>
       <input type="hidden" name="form-name" value="booking">
-      <p hidden><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <input type="hidden" name="type" id="bkType">
       <input type="hidden" name="lang" id="bkLang" value="en">
       <input type="hidden" name="hours" id="bkHours" value="2">
@@ -1711,11 +1710,11 @@ gpick.innerHTML=GR.map(g=>`<button type="button" aria-pressed="false"><img src="
 cmpIn.addEventListener('input',gpaint);
 gset(0);
 
-/* ---------- booking form (Netlify Forms on the live site) ---------- */
+/* ---------- booking form (sends via WhatsApp) ---------- */
 (()=>{const f=document.getElementById('bk');if(!f)return;const msg=document.getElementById('bkMsg'),send=document.getElementById('bkSend'),types=f.querySelector('.bk-types');
 document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{const c=[...document.querySelectorAll('#bk input[name=t]')].find(i=>i.value===a.dataset.pick);if(c){c.checked=true;c.dispatchEvent(new Event('change',{bubbles:true}))}}));
 const d=document.getElementById('bkDate');try{d.min=new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10)}catch(_){}
-const live=/(^|\.)netlify\.app$/.test(location.hostname);
+
 let extra=0;const hm=document.getElementById('hrMinus'),hp=document.getElementById('hrPlus');
 const hrs=()=>{const tot=2+extra;document.getElementById('hrExtra').textContent=extra;document.getElementById('hrTotal').textContent=tot;
   document.getElementById('hrUnit').textContent=lang==='ar'&&tot>10?t('fHr1'):t('fHrs');hm.disabled=extra<=0;hp.disabled=extra>=10;
@@ -1771,12 +1770,10 @@ f.addEventListener('submit',async e=>{e.preventDefault();msg.textContent='';
   if(!picked.length){types.classList.add('bad');msg.textContent=t('fPick');f.querySelector('input[name=t]').focus();return}
   document.getElementById('bkType').value=picked.join(', ');document.getElementById('bkLang').value=lang;
   confirmLinks();const fd=new FormData(f);
-  if(!live){const a=waLink(fd);msg.append(t('fPrev'),a);return}
-  send.disabled=true;send.textContent=t('fSending');
-  try{const fd2=new FormData(f);fd2.delete('t');const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fd2).toString()});
-    if(!r.ok)throw 0;f.hidden=true;document.getElementById('bkDone').hidden=false}
-  catch(_){const a=waLink(fd);msg.append(t('fErr'),a)}
-  finally{send.disabled=false;send.textContent=t('fSend')}})})();
+  const url='https://wa.me/96561000634?text='+encodeURIComponent(waText(fd));
+  const w=window.open(url,'_blank');if(w)w.opener=null;
+  if(!w){location.href=url;return}
+  f.hidden=true;document.getElementById('bkDone').hidden=false})})();
 
 /* ---------- language switch ---------- */
 const langBtn=document.getElementById('lang');
